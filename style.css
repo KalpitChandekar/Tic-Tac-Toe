@@ -10,7 +10,13 @@ body {
 }
 
 nav {
-  background-color: rgb(17, 56, 66);
+  background-color: #4158d0;
+  background-image: linear-gradient(
+    43deg,
+    #4158d0 0%,
+    #c850c0 46%,
+    #ffcc70 100%
+  );
   color: white;
   height: 65px;
   width: 100%;
