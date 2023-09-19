@@ -11,19 +11,16 @@ body {
 }
 
 nav {
-  background-color: #4158d0;
-  background-image: linear-gradient(
-    43deg,
-    #4158d0 0%,
-    #c850c0 46%,
-    #ffcc70 100%
-  );
-  color: white;
+  background-color: #00dbde;
+  background-image: linear-gradient(90deg, #00dbde 0%, #fc00ff 100%);
+
+  color: yellow;
   height: 65px;
   width: 100%;
   display: flex;
   padding: 0 12px;
   align-items: center;
+  justify-content: center;
   font-size: 30px;
 }
 
@@ -35,7 +32,6 @@ nav ul {
   display: flex;
   justify-content: center;
   padding: 50px;
-  
 }
 
 .container {
@@ -54,22 +50,22 @@ nav ul {
 }
 
 .box:hover {
-  background-color: #e3ddd2;
+  background-color: whitesmoke;
 }
 
-.br-0{
-    border-right: 0;
+.br-0 {
+  border-right: 0;
 }
-.bl-0{
-    border-left: 0;
+.bl-0 {
+  border-left: 0;
 }
-.bt-0{
-    border-top: 0;
+.bt-0 {
+  border-top: 0;
 }
-.bb-0{
-    border-bottom: 0;
+.bb-0 {
+  border-bottom: 0;
 }
 
-.imgbox img{
-    display: none;
+.imgbox img {
+  display: none;
 }
