@@ -31,7 +31,8 @@ const checkWin = () => {
     ) {
       document.querySelector(".info").innerText =
         boxtext[e[0]].innerText + " won";
-        isgameover = true;
+      isgameover = true;
+      document.querySelector(".imgbox img ").style.width = "200px";
     }
   });
 };
