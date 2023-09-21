@@ -32,6 +32,7 @@ nav ul {
   display: flex;
   justify-content: center;
   padding: 50px;
+  gap: 50px;
 }
 
 .container {
@@ -69,4 +70,19 @@ nav ul {
 .imgbox img {
   width: 0px;
   transition: width 1s ease-in-out;
+}
+
+button {
+  margin: 20px 15px;
+  padding: 8px 20px;
+  background-color: #e890ea;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 15px;
+  font-weight: semibold;
+}
+
+.info {
+  font-weight: 500;
+  font-size: 20px;
 }
