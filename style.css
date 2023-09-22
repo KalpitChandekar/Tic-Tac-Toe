@@ -37,8 +37,8 @@ nav ul {
 
 .container {
   display: grid;
-  grid-template-columns: repeat(3, 10vw);
-  grid-template-rows: repeat(3, 10vw);
+  grid-template-columns: repeat(3, 11vw);
+  grid-template-rows: repeat(3, 11vw);
 }
 
 .box {
@@ -85,4 +85,19 @@ button {
 .info {
   font-weight: 500;
   font-size: 20px;
+}
+
+@media (max-width: 750px) {
+  .gamecontainer {
+    flex-wrap: wrap;
+  }
+
+  .gameinfo h1 {
+    font-size: 1.5rem;
+  }
+
+  .container {
+    grid-template-columns: repeat(3, 17vw);
+    grid-template-rows: repeat(3, 17vw);
+  }
 }

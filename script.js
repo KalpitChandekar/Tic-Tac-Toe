@@ -3,6 +3,7 @@ let audioTurn = new Audio("ting.mp3");
 let gameover = new Audio("gameover.mp3");
 let turn = "X";
 let isgameover = false; // Change "0" to "X" for the initial turn
+let resetButton = document.querySelector("button");
 
 // Function to change the turn
 const changeTurn = () => {
@@ -55,3 +56,26 @@ Array.from(boxes).forEach((element) => {
     }
   });
 });
+
+resetButton.addEventListener("click", () => {
+  let boxtext = document.getElementsByClassName("boxtext");
+
+  // Clear the text content of all game boxes
+  for (let i = 0; i < boxtext.length; i++) {
+    boxtext[i].innerText = "";
+  }
+
+  // Reset the turn to "X"
+  turn = "X";
+
+  // Clear any game-over messages
+  document.querySelector(".info").innerText = "Turn for X";
+
+  // Reset any other game-related variables
+  isgameover = false;
+
+  // You can also reset the image width here if needed
+  document.querySelector(".imgbox img").style.width = "0px";
+});
+
+
